@@ -60,7 +60,7 @@ namespace Lista1
                 // Test dla typowego przypadku: zbior standardowy {a,b,c,d} podany w poleceniu do zadania
                 List<char> zbiorTestowy = new List<char> { 'a', 'b', 'c', 'd' };
                 List<List<char>> wynikPodzbiory = Podzbiory(zbiorTestowy);
-                Debug.Assert(wynikPodzbiory.Count == 16);
+                Debug.Assert(wynikPodzbiory.Count == 16, "Test nr 1 (zbior standardowy {a,b,c,d} podany w poleceniu do zadania) zakonczony niepowodzeniem.");
                 Console.WriteLine("Test nr 1 (zbior standardowy {a,b,c,d} podany w poleceniu do zadania) zakonczony sukcesem!");
             }
             catch (Exception)
@@ -72,8 +72,8 @@ namespace Lista1
                 // Test dla przypadku: zbior pusty { }
                 List<char> zbiorTestowy = new List<char> { };
                 List<List<char>> wynikPodzbiory = Podzbiory(zbiorTestowy);
-                Debug.Assert(wynikPodzbiory.Count == 1); //dla pustego zbioru liczba podzbiorow powinna wynosic 1
-                Debug.Assert(wynikPodzbiory[0].Count == 0); //podzbior ten powinien byc pusty
+                Debug.Assert(wynikPodzbiory.Count == 1, "Test nr 2 (zbior pusty { }) zakonczony niepowodzeniem."); //dla pustego zbioru liczba podzbiorow powinna wynosic 1
+                Debug.Assert(wynikPodzbiory[0].Count == 0, "Test nr 2 (zbior pusty { }) zakonczony niepowodzeniem."); //podzbior ten powinien byc pusty
                 Console.WriteLine("Test nr 2 (zbior pusty { }) zakonczony sukcesem!");
             }
             catch (Exception)
@@ -89,7 +89,7 @@ namespace Lista1
                 //jeden z tych podzbiorow powinien byc pusty a drugi zawierac 'a'
                 bool pustyPodzbior = wynikPodzbiory.Exists(podzbior => podzbior.Count == 0);
                 bool jedenElement = wynikPodzbiory.Exists(podzbior => podzbior.Count == 1 && podzbior[0] == 'a');
-                Debug.Assert(pustyPodzbior && jedenElement);
+                Debug.Assert(pustyPodzbior && jedenElement, "Test nr 3 (zbior jednoelementowy {a}) zakonczony niepowodzeniem.");
                 Console.WriteLine("Test nr 3 (zbior jednoelementowy {a}) zakonczony sukcesem!");
             }
             catch (Exception)
@@ -124,7 +124,7 @@ namespace Lista1
                 bool bElement = wynikPodzbiory.Exists(podzbior => podzbior.Count == 1 && podzbior[0] == 'b');
                 //podzbior zawierajacy a i b
                 bool abElement = wynikPodzbiory.Exists(podzbior => podzbior.Count == 2 && podzbior.Contains('a') && podzbior.Contains('b'));
-                Debug.Assert(pustyPodzbior && aElement && bElement && abElement);
+                Debug.Assert(pustyPodzbior && aElement && bElement && abElement, "Test nr 5 (zbior z powtarzajacymi sie elementami {a, a, b}) zakonczony niepowodzeniem.");
                 Console.WriteLine("Test nr 5 (zbior z powtarzajacymi sie elementami {a, a, b}) zakonczony sukcesem!");
             }
             catch (Exception)
@@ -146,21 +146,21 @@ namespace Lista1
                 bool element2 = wynikPodzbiory.Exists(podzbior => podzbior.Count == 1 && podzbior[0] == 2);
                 //podzbior zawierajacy 1 i 2
                 bool element12 = wynikPodzbiory.Exists(podzbior => podzbior.Count == 2 && podzbior.Contains(1) && podzbior.Contains(2));
-                Debug.Assert(pustyPodzbior && element1 && element2 && element12);
+                Debug.Assert(pustyPodzbior && element1 && element2 && element12, "Test nr 6 (zbior z liczbami {1,2}) zakonczony niepowodzeniem.");
                 Console.WriteLine("Test nr 6 (zbior z liczbami {1,2}) zakonczony sukcesem!");
             }
             catch (Exception)
             {
-                Console.WriteLine("Test nr 5 (zbior z liczbami {1,2}) zakonczony niepowodzeniem.");
+                Console.WriteLine("Test nr 6 (zbior z liczbami {1,2}) zakonczony niepowodzeniem.");
             }
 
 
 
             Console.WriteLine("Udalo sie, wszystkie przeprowadzone testy zakonczyly sie sukcesem!");
         }
-            public static void Main(string[] args)
+           public static void Main(string[] args)
         {
-            //w celach upewnienia sie, ze metoda zwraca liste pwszystkich podzbiorow, zgodnnie z trescia polecenia do zadania (ten sam przyklad co w poleceniu)
+            //w celach upewnienia sie, ze metoda zwraca liste pwszystkich podzbiorow, zgodnie z trescia polecenia do zadania (ten sam przyklad co w poleceniu)
             List<char> zbior = new List<char> { 'a', 'b', 'c', 'd' };
             List<List<char>> podzbiory = Podzbiory(zbior);
             Console.WriteLine("Podzbiory dla zbioru podanego w tresci polecenia do zadania {a,b,c,d}:");

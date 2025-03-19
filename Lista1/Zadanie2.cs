@@ -127,12 +127,12 @@ namespace Lista1
                 List<int> wynik = Wspolne(zb1, zb2);
                 spodziewanyWynik.Sort();
                 wynik.Sort();
-                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik));
+                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik), "Test nr 3 (dwa multizbiory niepuste z wszystkimi ale roznolicznymi wspolnymi elementami) zakonczony niepowodzeniem.");
                 Console.WriteLine("Test nr 3 (dwa multizbiory niepuste z wszystkimi ale roznolicznymi wspolnymi elementami) zakonczony sukcesem!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Test nr 3 (dwa multizbiory niepuste z wszystkimi ale roznolicznymi wspolnymi elementami) zakonczony niepowodzeniem. ");
+                Console.WriteLine("Test nr 3 (dwa multizbiory niepuste z wszystkimi ale roznolicznymi wspolnymi elementami) zakonczony niepowodzeniem.");
             }
             try
             {
@@ -143,7 +143,7 @@ namespace Lista1
                 List<int> wynik = Wspolne(zb1, zb2);
                 spodziewanyWynik.Sort();
                 wynik.Sort();
-                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik));
+                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik), "Test nr 4 (dwa multizbiory jednoelementowe z jednym wspolnym elementem) zakonczony niepowodzeniem. ");
                 Console.WriteLine("Test nr 4 (dwa multizbiory jednoelementowe z jednym wspolnym elementem) zakonczony sukcesem!");
             }
             catch (Exception ex)
@@ -159,7 +159,7 @@ namespace Lista1
                 List<int> wynik = Wspolne(zb1, zb2);
                 spodziewanyWynik.Sort();
                 wynik.Sort();
-                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik));
+                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik), "Test nr 5 (dwa multizbiory jednoelementowe bez wspolnego elementu) zakonczony niepowodzeniem. ");
                 Console.WriteLine("Test nr 5 (dwa multizbiory jednoelementowe bez wspolnego elementu) zakonczony sukcesem!");
             }
             catch (Exception ex)
@@ -175,12 +175,12 @@ namespace Lista1
                 List<int> wynik = Wspolne(zb1, zb2);
                 spodziewanyWynik.Sort();
                 wynik.Sort();
-                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik));
+                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik), "Test nr 6 (dwa multizbiory wieloelementowe bez wspolnego elementu) zakonczony niepowodzeniem.");
                 Console.WriteLine("Test nr 6 (dwa multizbiory wieloelementowe bez wspolnego elementu) zakonczony sukcesem!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Test nr 6 (dwa multizbiory wieloelementowe bez wspolnego elementu) zakonczony niepowodzeniem. ");
+                Console.WriteLine("Test nr 6 (dwa multizbiory wieloelementowe bez wspolnego elementu) zakonczony niepowodzeniem.");
             }
             try
             {
@@ -207,12 +207,12 @@ namespace Lista1
                 List<int> wynik = Wspolne(zb1, zb2);
                 spodziewanyWynik.Sort();
                 wynik.Sort();
-                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik));
+                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik), "Test nr 8 (drugi multizbior pusty) zakonczony niepowodzeniem.");
                 Console.WriteLine("Test nr 8 (drugi multizbior pusty) zakonczony sukcesem!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Test nr 8 (drugi multizbior pusty) zakonczony niepowodzeniem. ");
+                Console.WriteLine("Test nr 8 (drugi multizbior pusty) zakonczony niepowodzeniem.");
             }
             try
             {
@@ -223,12 +223,12 @@ namespace Lista1
                 List<int> wynik = Wspolne(zb1, zb2);
                 spodziewanyWynik.Sort();
                 wynik.Sort();
-                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik));
+                Debug.Assert(wynik.SequenceEqual(spodziewanyWynik), "Test nr 9 (oba multizbiory puste) zakonczony niepowodzeniem.");
                 Console.WriteLine("Test nr 9 (oba multizbiory puste) zakonczony sukcesem!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Test nr 9 (oba multizbiory puste) zakonczony niepowodzeniem. ");
+                Console.WriteLine("Test nr 9 (oba multizbiory puste) zakonczony niepowodzeniem.");
             }
             try
             {
