@@ -134,14 +134,12 @@ namespace Lista1
         /// Punkt wejscia do programu, ktory wywoluje funkcje testujaca dzialanie funkcji obliczajacej pole trojkata z wykorzystaniem wzoru Herona.
         /// </summary>
         /// <param name="args">Argumenty linii polecen.</param>
-        /*
-        public static void Main(string[] args)
+       public static void Main(string[] args)
         {
             TestPoleHeron();
             Console.WriteLine("Prosze wcisnac dowolny klawisz, by zakonczyc.");
             Console.ReadKey();
         }
-        */
 
     }
 }
