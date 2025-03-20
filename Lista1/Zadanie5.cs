@@ -206,13 +206,14 @@ namespace Lista1
         /// Punkt wejscia do programu, ktory wywoluje funkcje testujaca dzialanie funkcji Collatz i wywolanie funkcji wyznaczajacej maksymalna wartosc elementu i dlugosc ciagu dla zadanego c0.
         /// </summary>
         /// <param name="args">Argumenty linii polecen.</param>
-        public static void Main(string[] args)
+       /* public static void Main(string[] args)
         {
             //Wywolanie funkcji testujacej z asercjami
             TestCollatz();
 
-            //szukanie maksymalnej dlugosci ciagu i maksymalnej wartosci elementu ciagu przed wpadnieciem cykl i odpowiadajace im c0
-            // sprawdzenie w ciagach Collatza dla co z przedzialu [1 do 1000]
+            /*szukanie maksymalnej dlugosci ciagu i maksymalnej wartosci elementu ciagu przed wpadnieciem cykl i odpowiadajace im c0
+            sprawdzenie w ciagach Collatza dla co z przedzialu [1 do 1000], wniosek jest taki, ze dla c0=1 ciag szybko trafia w cykl (4,2,1), natomiast dla bardzo duzych wartosci c0
+            w praktyce nie ma ograniczen, ale zajmuje to wiecej czasu obliczen i rozmiar listy staje sie bardzo duzy
             AnalizaCollatz(
                 poczatek: 1,
                 koniec: 1000,
@@ -228,7 +229,7 @@ namespace Lista1
 
             Console.WriteLine("Prosze wcisnac dowolny klawisz, by zakonczyc.");
             Console.ReadKey();
-        }
+        }*/
     }
 }
     

@@ -280,12 +280,12 @@ namespace Lista1
         /// Punkt wejscia do programu, ktory wywoluje funkcje testujaca dzialanie metody wyznaczajacej wspolna czesc dwoch zmultizbiorow.
         /// </summary>
         /// <param name="args">Argumenty linii polecen.</param>
-       public static void Main(string[] args)
+       /*public static void Main(string[] args)
         {
             TestWspolne();
             Console.WriteLine("Prosze wcisnac dowolny klawisz, by zakonczyc.");
             Console.ReadKey();
-        }
+        }*/
 
     }
 }
