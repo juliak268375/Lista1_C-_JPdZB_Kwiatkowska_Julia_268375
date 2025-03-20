@@ -216,13 +216,13 @@ namespace Lista1
         /// Punkt wejscia do programu, ktory wywoluje funkcje testujaca dzialanie funkcji zwracajacej n elementow ciagu Fibonacciego iterayjnie i rekurencyjnie wyznaczonych.
         /// </summary>
         /// <param name="args">Argumenty linii polecen.</param>
-        /*public static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Wywolanie funkcji testujacych obliczanie pierwszych n elementow ciagu Fibonacciego iteracyjnie i rekurencyjnie.
             TestFibonacciIteracyjnie();
             TestFibonacciRekurencyjnie();
             Console.WriteLine("Prosze wcisnac dowolny klawisz, by zakonczyc.");
             Console.ReadKey();
-        }*/
+        }
     }
 }

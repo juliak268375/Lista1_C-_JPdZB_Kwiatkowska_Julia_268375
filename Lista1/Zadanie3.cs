@@ -159,7 +159,7 @@ namespace Lista1
 
             Console.WriteLine("Udalo sie, wszystkie przeprowadzone testy zakonczyly sie sukcesem!");
         }
-         /*public static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //w celach upewnienia sie, ze metoda zwraca liste pwszystkich podzbiorow, zgodnie z trescia polecenia do zadania (ten sam przyklad co w poleceniu)
             List<char> zbior = new List<char> { 'a', 'b', 'c', 'd' };
@@ -174,7 +174,7 @@ namespace Lista1
             TestPodzbiory();
             Console.WriteLine("Prosze wcisnac dowolny klawisz, by zakonczyc.");
             Console.ReadKey();
-        }*/
+        }
 
 
     }
