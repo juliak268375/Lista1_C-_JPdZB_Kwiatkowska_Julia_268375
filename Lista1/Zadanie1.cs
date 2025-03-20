@@ -64,7 +64,7 @@ namespace Lista1
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Test nr 1 (typowego trójkata pitagorejskiego o bokach 6, 8, 10) zakonczony niepowodzeniem.");
+                Console.WriteLine("Test nr 1 (typowego trójkata pitagorejskiego o bokach 6, 8, 10) zakonczony niepowodzeniem." + ex.Message);
             }
 
             try
@@ -78,7 +78,7 @@ namespace Lista1
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Test nr 2 (trojkata rownobocznego o bokach 4, 4, 4) zakonczony niepowodzeniem.");
+                Console.WriteLine("Test nr 2 (trojkata rownobocznego o bokach 4, 4, 4) zakonczony niepowodzeniem." + ex.Message);
             }
 
 
@@ -92,7 +92,7 @@ namespace Lista1
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Test nr 3 (trojkat o bardzo malych bokach 0.0001, 0.0001, 0.0001) zakonczony niepowodzeniem.");
+                Console.WriteLine("Test nr 3 (trojkat o bardzo malych bokach 0.0001, 0.0001, 0.0001) zakonczony niepowodzeniem." + ex.Message);
             }
 
 

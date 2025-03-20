@@ -11,6 +11,9 @@ using System.Diagnostics;
 
 namespace Lista1
 {
+    /// <summary>
+    /// Klasa Zadanie 4 z implementacja metod pozwalajacych na obliczenie n pierwszych elementow ciagu Fobonacciego z wykorzystaniem rekurencji i iteracji oraz zawiera odpowiednie sprawdzenie poprawnosci jej dzialania.
+    /// </summary>
     class Zadanie4
     {
         /// <summary>
@@ -20,7 +23,7 @@ namespace Lista1
         /// </summary>
         /// <param name="n">Liczba n pierwszych elementow ciagu Fibonacciego do wygenerowania (n > 0)</param>
         /// <returns>Lista typu long, ktora zawiera n pierwszych elementow ciagu Fibonacciego</returns>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentException">Wyjatek rzucany, gdy n <=0. </exception>
         public static List<long> FibonacciIteracyjnie(int n)
         {
             if (n <= 0)
@@ -49,7 +52,7 @@ namespace Lista1
         /// </summary>
         /// <param name="n">Indeks elementu ciagu Fibonacciego (n>=0)</param>
         /// <returns>zwraca n-ty element ciagu Fibonacciego</returns>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentException">Wyjatek rzucany, gdy n<0.</exception>
         private static long FibonacciRekurencyjnieObliczenie(int n)
         {
             if (n < 0)
@@ -69,7 +72,7 @@ namespace Lista1
         /// </summary>
         /// <param name="n">Liczba n pierwszych elementow ciagu Fibonacciego do wygenerowania (n > 0)</param>
         /// <returns>Lista typu long, ktora zawiera n pierwszych elementow ciagu Fibonacciego</returns>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentException">Wyjatek rzucany, gdy n<=0.</exception>
         public static List<long> FibonacciRekurencyjnie(int n)
         {
             if (n <= 0)

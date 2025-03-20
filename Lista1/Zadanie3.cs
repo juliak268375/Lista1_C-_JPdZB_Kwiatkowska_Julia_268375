@@ -13,7 +13,7 @@ using System.Diagnostics;
 namespace Lista1
 {
     /// <summary>
-    /// Klasa Zadanie 3 z implementacja metody pozwalajacej na zwracanie dla danego zbioru wszystkich mozliwych jego podzbiorow.
+    /// Klasa Zadanie 3 z implementacja metody pozwalajacej na zwracanie dla danego zbioru wszystkich mozliwych jego podzbiorow oraz zawiera odpowiednie sprawdzenie poprawnosci jej dzialania.
     /// </summary>
     class Zadanie3
     {
@@ -25,7 +25,7 @@ namespace Lista1
         /// <param name="zbior">Lista elementow wejsciowego zbioru.</param>
         /// <returns>Lista ze wszystkimi podzbiorami danego zbioru.</returns>
         /// <exception cref="ArgumentNullException">Wyjatek rzucany, w momencie, gdy przekazany zbior jest nullem.</exception>
-        public static List<List<T>>Podzbiory<T>(List<T> zbior)
+        public static List<List<T>>Podzbiory<T>(List<T>zbior)
         {
             if (zbior == null)
                 throw new ArgumentNullException(nameof(zbior), "Wejsciowy zbior nie moze byc nullem!");
@@ -158,7 +158,7 @@ namespace Lista1
 
             Console.WriteLine("Udalo sie, wszystkie przeprowadzone testy zakonczyly sie sukcesem!");
         }
-           public static void Main(string[] args)
+         public static void Main(string[] args)
         {
             //w celach upewnienia sie, ze metoda zwraca liste pwszystkich podzbiorow, zgodnie z trescia polecenia do zadania (ten sam przyklad co w poleceniu)
             List<char> zbior = new List<char> { 'a', 'b', 'c', 'd' };
